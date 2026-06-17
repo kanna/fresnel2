@@ -1,0 +1,262 @@
+\section*{Introduction}
+
+In 2024, the execution of the \org funded \oldproj showed that ocean
+model driven \emph{adaptive} exploration, to drive targeted sampling
+with gather data assimilated back into the model in a virtuous
+\emph{sample-assimilate-predict-direct} to target the next round of
+predicted uncertainty, could enhance model skill. 
+
+In \proj we propose to close the observe-assimilate-predict-sample
+loop in the coastal ocean. Model skill, especially in the coastal
+ocean, is highly dependent on sparsely sampled in-situ measurements
+and remote sensing data (when available).  Typically satellite data
+augmented by some fixed assets such as buoys, or Lagrangian floats
+constitute the bulk of the observations with a few ship-board
+measurements providing validation of the model. However few models
+provide assimilated information at small spatial scales ($\sim 100$'s
+of meters) relevant to short term tactical planning.
+
+
+Our objective in \proj is to demonstrate the applicability of
+adaptively controlled marine robots in the aerial, surface and
+underwater domains, while sampling the upper water-column 'at the
+right place and time' driven by ocean models with increasing
+predictive skill. Fig. \ref{fig:block-diag} shows a conceptual view of
+the proposed field experiment.
+
+\begin{figure}[!b]
+  \centering
+  \includegraphics[scale=0.15]{fig/ensemble.jpg}
+  \caption{\proj will integrate ocean models with adaptive robotic vehicles
+    in the coastal ocean, to increase model skill while increasing
+    model accuracy and prediction with a tight loop.}
+  \label{fig:block-diag}
+\end{figure}
+
+\section*{Motivation}
+
+\proj in an inter-disciplinary field driven experiment spanning the
+fields of Physical and Biological Oceanography, Artificial
+Intelligence (including Machine Learning), autonomous systems and
+Spatial Statistics. It will bring together researchers from these
+diverse fields (all of whom have worked with one another) to build on
+the integrative aspects of ocean observation especially in a dynamic
+coastal environment.  In doing so, the tight integration between model
+prediction and assimilation will be enhanced so as to provide
+realistic forecasts of a range of bio-physical variables including
+temperature, salinity, wind, surface and sub-surface currents and
+bio-optical properties. These in turn will be used to
+\emph{intelligently target sampling} with robotic vehicles in the air,
+surface and underwater domains. Important outcomes of this proposed
+project include:
+
+\begin{itemize}[noitemsep,topsep=5pt,parsep=0pt,partopsep=0pt,leftmargin=0.5cm]
+
+\item rapid assessment of environmental state using state of the art
+  methods in modeling, control and sampling with minimal human intervention
+\item increasing model prediction skill with targeted sampling to
+  reduce uncertainty
+\item real-time decision support to determine appropriate mix of
+  robotic or manned assets (e.g. small boats or research vessel) for
+  targeted sampling
+\item demonstration of coordinated observations with an ensemble of
+  robotic vehicles with minimal human intervention
+\end{itemize}
+
+The novelty is in the integrative aspects of this field exercise;
+while individual aspects might have been demonstrated in small
+experiments (including by members of this team), pulled together this
+experiment will leap-frog experimental design, autonomous operations,
+assimilation, modeling and prediction in ways not done before.
+
+\section*{Location}
+
+We propose to hold the field experiment off of % the western coast of
+% Portugal near the Nazar\'e canyon-Berlengas area for a number of
+% important reasons. The region offers one of the longest and deepest
+% canyon's in continental Europe with powerful tidal pumping, generation
+% of internal waves, seasonal wind forcing promoting canyon driven
+% upwelling and large upwelling filaments extending offshore for
+% hundreds of kilometers from shore with dispersal along the south and
+% the northern coasts as well as into the Atlantic.  Thus this region is
+% very dynamic with frequent and rapid changes in water column
+% properties, making it ideal for testing our model and sampling skills.
+% The long canyon and the presence of two islands just offshore provide
+% an interesting range of bio-geophysical phenomenon not observed
+% elsewhere including routine 30 meter waves in the surf zone; as a
+% result Nazar\'e is renowned as a surfing location
+% ~\footnote{\url{https://www.youtube.com/watch?v=GJc4Ir78KdE}, and
+%   \url{https://www.youtube.com/watch?v=74pnrYPozcU}} with substantial
+% media coverage especially in the English speaking world.  Equally, the
+% Portuguese Hydrografic Institute
+% (\inste)~\footnote{\url{https://www.hidrografico.pt/}} maintains two
+% real-time multi-parameter buoys as well as tide gauges in the vicinity
+% of the canyon.
+See Fig. \ref{fig:studyarea-1} and \ref{fig:studyarea-2}.
+
+\begin{figure}[!h]
+  \vspace{-0.5cm} \centering \subfigure[Map of Portugal and the study
+  area highlighted with the red
+  rectangle.]{\label{fig:po-map}\includegraphics[scale=0.5]{fig/po-map.jpeg}}
+  \hspace{+0.3cm} \subfigure[Zoomed in bathymetry showing the Nazar\'e
+  canyon-Berlengas area (isobaths with depth in meters) and its
+  environment including the placement of the two
+  buoys.]{\label{fig:domain}\includegraphics[scale=0.5]{fig/domain.jpg}}
+  \subfigure[Predictions of currents and temperature at 10m depth from
+  a \texttt{HOPS} (Harvard Ocean Prediction System) model with
+  assimilation of temperature and salinity measurements collected by
+  CTD profiles and
+  current-meters.]{\label{fig:model}\includegraphics[scale=0.50]{fig/model.jpeg}}
+  \caption{\subref{fig:po-map} \& \subref{fig:domain} show detailed
+    views of the proposed study area for \proje, while
+    \subref{fig:model} shows model predictions for the dynamic region
+    driven by bathymetry and external forcing.}
+  \label{fig:studyarea-1}
+\end{figure}
+
+
+\begin{figure}[!h]
+  \vspace{-0.5cm}
+  \centering
+  \subfigure[]{\label{fig:chlshelf}\includegraphics[scale=0.45]{fig/chl-shelf.png}}
+  \subfigure[]{\label{fig:chldomain}\includegraphics[scale=0.4]{fig/chl-domain.png}}
+  \subfigure{\includegraphics[scale=0.3]{fig/legend.png}}
+  % \hspace{+0.3cm} 
+  \subfigure[]{\label{fig:tmpchange}\includegraphics[scale=0.285]{fig/temp-change.png}}
+  \subfigure[]{\label{fig:chlchange}\includegraphics[scale=0.285]{fig/chl-change.png}}
+  \caption{300m resolution remote sensing images from Sentinel 3 from
+    September 6\textsuperscript{th} 2019 showing along shelf
+    \subref{fig:chlshelf} and zoomed in Chlrophyll filaments
+    \subref{fig:chldomain} emanating from the proposed study area of
+    Nazar\'e canyon-Berlengas. \subref{fig:tmpchange} and
+    \subref{fig:chlchange} show time series with rapid changes of
+    temperature and chlorophyll respectively in the area.}
+  \label{fig:studyarea-2}
+\end{figure}
+
+\section*{Logistical and budgetary information}
+
+% Off shore in the Nazar\'e canyon-Berlengas area are two islands of
+% Berlengas and Farilho\~es part of a protected nature preserve. With
+% special permission we expect to be able to be based in Berlengas for a
+% period of 3 weeks to conduct off shore operations. A small team will
+% also be present onboard the \inst research vessel where if needed,
+% deployment and recovery of assets well off shore at the boundaries of
+% the survey region, can be done. In addition \inst will be in a
+% position to provide a RHIB or a rigid boat for near-shore operations
+% from the two islands.
+
+% \univ will provide the bulk of the robotic assets including aerial,
+% surface and underwater vehicles as also the team to operate them. The
+% team will be split between being based in Berlengas, the research
+% vessel and also provide remote monitoring from Porto. \univ will
+% provide at least one glider to operate outside the shelf to augment
+% model observations in the meso-scale.
+
+Our approximate and highly leveraged budget for this exercise is
+expected to be \textbf{$\sim \$100$ K to support this 21 day (3 week)}
+operation. This includes all robotic vehicles, faculty and staff from
+all the partner organizations, transportation of assets and people in
+Portugal as also insurance and communication costs for and during the
+exercise. The budget will directly support software development to
+extend observation quality control, assimilation and ML based
+approaches to entropy reduction in modeling, all based out of \unive.
+
+
+\paragraph{Roles and responsibilities} \univ will be the lead
+organization, provide aerial, surface and underwater vehicles,
+communication equipment and command/control software while
+coordinating all activities. Funding requested will primarily support
+students and staff in Porto and Lisbon for software development, model
+development and operations.  \colo will work on making bio-optical and
+biological measurements and providing analysis and data to augment
+\ulis modeling. Table \ref{tab:roles} summarizes the roles and
+contributions of all partners.
+
+\begin{table}[!t]
+  \centering
+  \vspace{-0.5cm}
+  \begin{tabular}{|p{1.5cm}|p{10cm}|p{4cm}|}\hline 
+    \rowcolor{Gray}
+    \bfseries Inst. &\bfseries Role &\bfseries Contributions\\
+    \hline
+    \univ & Lead organization, CONOPS (concept of operations) design and
+            implementation, software engineering, reporting, experiment design, outreach
+                                    &aerial/surface/underwater
+                                      vehicles, comms, gliders, operations team\\
+    \hline
+    \ulis & Physical Oceanography, Modeling, observation assimilation,
+            prediction, Modeling, Machine Learning and entropy reduction&
+                                                                          outreach\\
+    \hline
+    \colo & Ocean dynamics, sampling algorithms&\\
+    \hline
+  \end{tabular}
+  \caption{Roles and responsibilities and in-kind contributions in
+    \proj for the proposed 2021 Sept-Oct field experiment. All team
+    members will be collaboratively involved in experiment design and
+    post experiment publishing.}
+  \label{tab:roles}
+\end{table}
+
+\paragraph{Operational Considerations} While most experiments in the
+coastal zone rely on ship-board measurements and gliders, the
+challenging nature of this high-energy environment requires a mix of
+assets in addition to gliders. Currents can be in the region of
+$\sim 2$ knots, there is substantial variability in the upper
+water-column and with high primary productivity and the existence of
+coastal upwelling to provide for a rich nutrient base and the study
+region has a robust presence of fishermen, nets and crab pots. We
+expect to field an ensemble of low cost robotic vehicles including
+propelled AUVs, unmanned surface vehicles, low cost Lagrangian
+profilers and aerial vehicles with RGB and potentially hyper-spectral
+imaging sensors. Accessibility to the two islands will also provide
+some shelter from weather for continuous operations including rapid
+launch/recovery of in-situ assets. In addition, we will obtain images
+from the \textbf{SeaHawk} nano-satellite (developed with funding from
+the Moore Foundation when Subramaniam was program director there) with
+a high quality multi-spectral
+imager~\footnote{\url{https://uncw.edu/socon/index.html}}. Finally,
+\univ has a number of low cost temperature/density sensors which when
+calibrated with CTDs on the vessel and robotic vehicles, will enable
+local fisherman to provide timely data in this meso-scale
+region. % All such data will be assimilated into the ocean models run by
+% \inst and supported by \mit which continues to support \texttt{HOPS}
+% development.
+
+% \paragraph{COVID protocol} As per standard oceanographic cruise
+% protocol in current circumstances, we will follow the guidance of WHO
+% and the US CDC; all personnel will isolate 5 days before the
+% experiment after appropriate PCR tests for safety and stay in one
+% pod. Those onboard the \inst research vessel will follow Portuguese
+% Navy guidelines and also isolate prior to the cruise and have no
+% contact with shore based personnel during the course of the
+% experiment.
+
+\section*{Outreach}
+
+% \inst has had continued and extensive engagement over the years with
+% the local authorities including the Nazar\'e city officials and local
+% fishermen. As a result we will engage the fishing community to carry
+% our low cost temperature/density sensors and also help provide access
+% to the team to be able to commute to the islands when necessary,
+% subject to health protocols.
+In addition, we expect to engage local high school students prior and
+after the experiment, to entice them into thinking about careers in
+science and technology, much as we have done in the past with success
+in another \org funded
+program~\footnote{\url{https://sunfish.lsts.pt/en/outreach/education}}. In
+\oldproj for instance, we engaged a local science high school with the
+participation of the district's superintendant. 
+
+With the world-wide interest in the area \proj will also work with the
+local authorities to showcase our work in Portuguese and English
+language media outlets.
+
+Finally, publications resulting from the project will be targeted
+towards peer-reviewed journals including \emph{Oceanography, Science
+  Robotics, IEEE Transactions on Field Robotics, Int. J. of Robotics
+  Research, AI Journal, Autonomous Robots, PLOSone, Frontiers} and
+high-impact conferences such as \emph{AAAI, IJCAI, ISER, ICAPS, RSS,
+  IROS, ICRA and IEEE AUV} where we have frequently published.
+

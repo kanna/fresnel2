@@ -23,7 +23,7 @@ targeted exploration.
 
 In \proj, we propose to build on this effort in the following ways:
 
-\begin{enumerate}
+\begin{enumerate}[noitemsep,topsep=5pt,parsep=0pt,partopsep=0pt,leftmargin=0.5cm]
 
 \item Systematically compare between traditional discrete ship-based
   measurements approaches to assimilate data into models with those
@@ -49,20 +49,20 @@ In \proj, we propose to build on this effort in the following ways:
 Put together, this advances the science, demonstrates the utility of
 robotics to modeling and Physical Oceanography, generates novel ways
 to observe the ocean and leverages funded efforts at \orge. Further,
-it builds on efforts in the 2005 \textbf{AOSN-II} \cite{ramp09} which
-in turn, built on top of \textbf{AOSN} \cite{aosn93} albeit, using low
-cost approches to field science, and with a modest budget.
+it builds on efforts in \org funded \textbf{AOSN} \cite{aosn93} and
+\textbf{AOSN-II} \cite{ramp09} projects. \proj will however use
+low-cost approches to field science, and with a modest budget.
 
-Our objective in \proj is to demonstrate the applicability of
+In doing so, our objective is to demonstrate the applicability of
 adaptively controlled marine robots in the aerial, surface and
-underwater domains, while sampling the upper water-column 'at the
-right place and time' driven by ocean models with increasing
-predictive skill. In the process, we also plan to mitigate the
-shortcomings noted from the earlier experiment, in ways that can
-provide for sustained in-water presence of AUVs over a period of 3
-weeks to gather valuable data to validate our approach conclusively.
-Fig. \ref{fig:block-diag} shows a conceptual view of the proposed
-field experiment from \oldproj which continues to be relevant.
+underwater domains while sampling the upper water-column 'at the right
+place and time' driven by ocean models with increasing predictive
+skill because of assimilation and uncertainty prediction. In the
+process, we also plan to mitigate the shortcomings noted from our
+earlier effort, in ways that can provide for sustained in-water
+presence of AUVs over a period of 3 weeks to validate our approach
+conclusively.  Fig. \ref{fig:block-diag} shows a conceptual view of
+the proposed field experiment.
 
 \begin{figure}[!]
   \centering
@@ -76,19 +76,18 @@ field experiment from \oldproj which continues to be relevant.
 \section*{Motivation}
 
 \proj in an inter-disciplinary field driven experiment spanning the
-fields of Physical and Biological Oceanography, Artificial
-Intelligence (including Machine Learning), autonomous systems and
-Spatial Statistics. It will bring together researchers from these
-diverse fields (all of whom have worked with one another) to build on
-the integrative aspects of ocean observation especially in a dynamic
-coastal environment.  In doing so, the tight integration between model
-prediction and assimilation will be enhanced so as to provide
-realistic forecasts of a range of bio-physical variables including
-temperature, salinity, wind, surface and sub-surface currents and
-bio-optical properties. These in turn will be used to
-\emph{intelligently target sampling} with robotic vehicles in the air,
-surface and underwater domains. Important outcomes of this proposed
-project include:
+fields of Physical Oceanography, Bio-Optics, Artificial Intelligence,
+Autonomous Systems and Spatial Statistics. It will bring together
+researchers from these diverse fields (all of whom have worked with
+one another) to build on the integrative aspects of ocean observation
+especially in a dynamic and complex coastal environment.  In doing so,
+the tight integration between model prediction and assimilation will
+be enhanced so as to provide realistic forecasts of a range of
+bio-physical variables including temperature, salinity, wind, surface
+and sub-surface currents and bio-optical properties. These in turn
+will be used to \emph{intelligently target sampling} with robotic
+vehicles in the air, surface and underwater domains. Important
+outcomes of this proposed project include:
 
 \begin{itemize}[noitemsep,topsep=5pt,parsep=0pt,partopsep=0pt,leftmargin=0.5cm]
 
@@ -104,131 +103,138 @@ project include:
 \end{itemize}
 
 The novelty is in the integrative aspects of this field exercise;
-while individual aspects might have been demonstrated in small
-experiments (including by members of this team), pulled together this
+while individual aspects might have been demonstrated in other field
+deployments (including by members of this team), pulled together this
 experiment will leap-frog experimental design, autonomous operations,
 assimilation, modeling and prediction in ways not done before.
 
 \section*{Location}
-The project will focus on the Bay of Setúbal and the adjacent coastal shelf between Setúbal and Sesimbra. This choice is motivated by the fact that the region combines a semi-enclosed bay, an abrupt coastal mountain system, a narrow and topographically complex shelf, and the nearby Setúbal Canyon, creating a highly heterogeneous environment for testing robotic exploration and short-term coastal predictions. From an operational standpoint, this area is also particularly attractive because it lies within the ZLT Infante D. Henrique, a regulated real-world experimentation area created to test unmanned and other advanced technologies in open-sea conditions and monitored from the Portuguese Navy’s operational experimentation centre in Tróia. The same area regularly hosts the REPMUS exercise, further demonstrating its suitability for complex, multi-platform maritime experimentation. 
 
-The geomorphological setting (Arrábida Chain) justifies treating the region as a topographically and orographically controlled coastal system, where coastline orientation, shelf geometry, and the mountain barrier are expected to modulate local wind exposure, circulation patterns, and the spatial expression of upwelling-related processes. Published studies for the Portuguese west coast show that upwelling-favourable conditions are most consistent in spring and summer and that intense coastal upwelling is strongly shaped by local coastal geometry, with evidence that the upwelling core may separate from the coast depending on shelf structure and the interaction between surface and bottom Ekman layers. Studies in central Portugal further show that complex coastline and bathymetry favour along-slope jets, frontal structures, countercurrents during relaxation, and recirculation cells. In the present project, these mechanisms provide the physical rationale for explicitly testing how local topographic steering alters the recurrence, persistence, and cross-shore organization of upwelling signatures in the Bay of Setúbal–Sesimbra sector.
+The project will focus on \set Bay, south of Lisbon, and the adjacent
+coastal shelf between \set and Sesimbra (Fig. \ref{fig:domain}). This
+choice is motivated by the fact that the region combines a
+semi-enclosed bay, an abrupt coastal mountain system, a narrow and
+topographically complex shelf, and the nearby \set Canyon, creating a
+highly heterogeneous environment for testing robotic exploration and
+short-term coastal predictions. From an operational standpoint, this
+area is also particularly attractive because it lies within a
+regulated real-world experimentation area created to test unmanned and
+other advanced technologies in open-sea conditions and monitored from
+the Portuguese Navy’s operational experimentation centre in
+Tr\'{o}ia. The same area regularly hosts the \rep exercise with
+participants of more than 30 navies (including personnel from the US
+Navy and \orge). We propose targeting the month of May 2027 for the
+experiment.
 
-A second key control is the influence of the Setúbal Canyon, whose head lies about 6 km from the coast at roughly 60 m water depth and which extends for around 150 km down to depths of about 4500 m before merging with the Lisbon canyon system. The canyon therefore introduces a major bathymetric discontinuity very close to the operational area and is expected to affect slope–shelf exchange, local and regional current structure and settings, and the spatial redistribution of suspended material. 
+\subsection*{Key processes in \set Bay}
 
-A third process is the role of internal tides and internal waves generated or intensified by complex bathymetry. The available canyon studies for the Lisbon–Setúbal system explicitly identify internal-tide processes as dynamics associated with sediment transport and near-bottom current variability, while broader recent work confirms that internal-wave breaking over sloping topography is a major mechanism for turbulent mixing in the region. This supports framing internal-wave activity not as a rare phenomenon but as a likely contributor to short-scale vertical exchange, intermittency in stratification, and local forecast uncertainty. For the project, this is especially relevant because such fine-scale and bathymetry-induced processes are precisely the kind of dynamics that are usually missed by regional models and therefore motivate this proposal.
+The geomorphological setting (Arrábida Chain) justifies treating the
+region as a topographically and orographically controlled coastal
+system, where coastline orientation, shelf geometry, and the mountain
+barrier are expected to modulate local wind exposure, circulation
+patterns, and the spatial expression of upwelling-related
+processes. Published studies for the Portuguese west coast show that
+upwelling-favourable conditions are most consistent in spring and
+summer and that intense coastal upwelling is strongly shaped by local
+coastal geometry, with evidence that the upwelling core may separate
+from the coast depending on shelf structure and the interaction
+between surface and bottom Ekman layers. Studies in central Portugal
+further show that complex coastline and bathymetry favor along-slope
+jets, frontal structures, countercurrents during relaxation, and
+recirculation cells. These mechanisms provide the rationale for
+explicitly testing how local topographic steering alters the
+recurrence, persistence, and cross-shore organization of upwelling
+signatures in the Bay of \sete–-Sesimbra sector.
 
-Operationally, the area also offers a high likelihood of successful field testing throughout much of the year due to the sheltered conditions created by the local coastal configuration and orography. In practice, sea-state limitations are expected to become operationally restrictive mainly under southerly swell conditions, which are comparatively uncommon in this region and more likely during fall and winter.
 
-%We propose to hold the field experiment off of % the western coast of
-% Portugal near the Nazar\'e canyon-Berlengas area for a number of
-% important reasons. The region offers one of the longest and deepest
-% canyon's in continental Europe with powerful tidal pumping, generation
-% of internal waves, seasonal wind forcing promoting canyon driven
-% upwelling and large upwelling filaments extending offshore for
-% hundreds of kilometers from shore with dispersal along the south and
-% the northern coasts as well as into the Atlantic.  Thus this region is
-% very dynamic with frequent and rapid changes in water column
-% properties, making it ideal for testing our model and sampling skills.
-% The long canyon and the presence of two islands just offshore provide
-% an interesting range of bio-geophysical phenomenon not observed
-% elsewhere including routine 30 meter waves in the surf zone; as a
-% result Nazar\'e is renowned as a surfing location
-% ~\footnote{\url{https://www.youtube.com/watch?v=GJc4Ir78KdE}, and
-%   \url{https://www.youtube.com/watch?v=74pnrYPozcU}} with substantial
-% media coverage especially in the English speaking world.  Equally, the
-% Portuguese Hydrografic Institute
-% (\inste)~\footnote{\url{https://www.hidrografico.pt/}} maintains two
-% real-time multi-parameter buoys as well as tide gauges in the vicinity
-% of the canyon.
-See Fig. \ref{fig:studyarea-1} and \ref{fig:studyarea-2}.
-\begin{figure}[!]
+\begin{figure}[!t]
   \centering
   \includegraphics[scale=0.5]{fig/fig_setubal_bay.png}
-  \caption{domain}
+  \caption{The operational domain for \proj is \set Bay south of
+    Lisbon, which combines a semi-enclosed bay, an abrupt coastal
+    mountain system, a narrow and topographically complex shelf, and
+    the \set Canyon.}
   \label{fig:domain}
 \end{figure}
 
+A second key control is the influence of the \set Canyon, whose head
+lies about 6 km from the coast at roughly 60 m depth and which extends
+for around 150 km down to depths of about 4500 m before merging with
+the Lisbon canyon system. The canyon therefore introduces a major
+bathymetric discontinuity very close to the operational area and is
+expected to affect slope–shelf exchange, local and regional current
+structure and settings, and the spatial redistribution of suspended
+material.
 
-%\begin{figure}[!h]
- % \vspace{-0.5cm} \centering \subfigure[Map of Portugal and the study
- % area highlighted with the red
-%  rectangle.]{\label{fig:po-map}\includegraphics[scale=0.5]{fig/po-map.jpeg}}
- % \hspace{+0.3cm} \subfigure[Zoomed in bathymetry showing the Nazar\'e
-%  canyon-Berlengas area (isobaths with depth in meters) and its
- % environment including the placement of the two
- % buoys.]{\label{fig:domain}\includegraphics[scale=0.5]{fig/fig_setubal_bay.png}}
-%  \subfigure[Predictions of currents and temperature at 10m depth from
- % a \texttt{HOPS} (Harvard Ocean Prediction System) model with
- % assimilation of temperature and salinity measurements collected by
- % CTD profiles and
-  %current-meters.]{\label{fig:model}\includegraphics[scale=0.50]{fig/model.jpeg}}
-  %\caption{\subref{fig:po-map} \& %\subref{fig:domain} show detailed
-  %  views of the proposed study area for \proje, while
-    %\subref{fig:model} shows model predictions for the dynamic region
-    %driven by bathymetry and %external forcing.}
-%  \label{fig:studyarea-1}
-%\end{figure}
+A third process is the role of internal tides and internal waves
+generated or intensified by complex bathymetry. The available canyon
+studies for the Lisbon-–\set system explicitly identify
+internal-tide processes as dynamics associated with sediment transport
+and near-bottom current variability, while broader recent work
+confirms that internal-wave breaking over sloping topography is a
+major mechanism for turbulent mixing in the region. This supports
+framing internal-wave activity not as a rare phenomenon but as a
+likely contributor to short-scale vertical exchange, intermittency in
+stratification, and local forecast uncertainty. For the project, this
+is especially relevant because such fine-scale and bathymetry-induced
+processes are precisely the kind of dynamics that are usually missed
+by regional models and therefore motivate this proposal.
 
+Operationally, the area also offers a high likelihood of successful
+field testing throughout much of the year due to the sheltered
+conditions created by the local coastal configuration and
+orography. In practice, sea-state limitations are expected to become
+operationally restrictive mainly under southerly swell conditions,
+which are comparatively uncommon in this region and more likely during
+fall and winter.
 
-\begin{figure}[!h]
-  \vspace{-0.5cm}
-  \centering
-  \subfigure[]{\label{fig:chlshelf}\includegraphics[scale=0.45]{fig/chl-shelf.png}}
-  \subfigure[]{\label{fig:chldomain}\includegraphics[scale=0.4]{fig/chl-domain.png}}
-  \subfigure{\includegraphics[scale=0.3]{fig/legend.png}}
-  % \hspace{+0.3cm} 
-  \subfigure[]{\label{fig:tmpchange}\includegraphics[scale=0.285]{fig/temp-change.png}}
-  \subfigure[]{\label{fig:chlchange}\includegraphics[scale=0.285]{fig/chl-change.png}}
-  \caption{300m resolution remote sensing images from Sentinel 3 from
-    September 6\textsuperscript{th} 2019 showing along shelf
-    \subref{fig:chlshelf} and zoomed in Chlrophyll filaments
-    \subref{fig:chldomain} emanating from the proposed study area of
-    Nazar\'e canyon-Berlengas. \subref{fig:tmpchange} and
-    \subref{fig:chlchange} show time series with rapid changes of
-    temperature and chlorophyll respectively in the area.}
-  \label{fig:studyarea-2}
-\end{figure}
+\kc{RM+LA: To add some images of the \set area with SST images + plots
+  for a typical May weather in \set and any other figures of
+  relevance. See commented section below on what was included for \oldproje.}
+
+% \begin{figure}[!h]
+%   \vspace{-0.5cm}
+%   \centering
+%   \subfigure[]{\label{fig:chlshelf}\includegraphics[scale=0.45]{fig/chl-shelf.png}}
+%   \subfigure[]{\label{fig:chldomain}\includegraphics[scale=0.4]{fig/chl-domain.png}}
+%   \subfigure{\includegraphics[scale=0.3]{fig/legend.png}}
+%   % \hspace{+0.3cm} 
+%   \subfigure[]{\label{fig:tmpchange}\includegraphics[scale=0.285]{fig/temp-change.png}}
+%   \subfigure[]{\label{fig:chlchange}\includegraphics[scale=0.285]{fig/chl-change.png}}
+%   \caption{300m resolution remote sensing images from Sentinel 3 from
+%     September 6\textsuperscript{th} 2019 showing along shelf
+%     \subref{fig:chlshelf} and zoomed in Chlrophyll filaments
+%     \subref{fig:chldomain} emanating from the proposed study area of
+%     Nazar\'e canyon-Berlengas. \subref{fig:tmpchange} and
+%     \subref{fig:chlchange} show time series with rapid changes of
+%     temperature and chlorophyll respectively in the area.}
+%   \label{fig:studyarea-2}
+% \end{figure}
 
 \section*{Logistical and budgetary information}
 
-
-% Off shore in the Nazar\'e canyon-Berlengas area are two islands of
-% Berlengas and Farilho\~es part of a protected nature preserve. With
-% special permission we expect to be able to be based in Berlengas for a
-% period of 3 weeks to conduct off shore operations. A small team will
-% also be present onboard the \inst research vessel where if needed,
-% deployment and recovery of assets well off shore at the boundaries of
-% the survey region, can be done. In addition \inst will be in a
-% position to provide a RHIB or a rigid boat for near-shore operations
-% from the two islands.
-
-% \univ will provide the bulk of the robotic assets including aerial,
-% surface and underwater vehicles as also the team to operate them. The
-% team will be split between being based in Berlengas, the research
-% vessel and also provide remote monitoring from Porto. \univ will
-% provide at least one glider to operate outside the shelf to augment
-% model observations in the meso-scale.
-
 Our approximate and highly leveraged budget for this exercise is
-expected to be \textbf{$\sim \$100$ K to support this 21 day (3 week)}
-operation. This includes all robotic vehicles, faculty and staff from
-all the partner organizations, transportation of assets and people in
-Portugal as also insurance and communication costs for and during the
-exercise. The budget will directly support software development to
+expected to be \textbf{$\sim \$500$ K to support this 21 day (3 week)}
+experiment. This includes deployment of all robotic vehicles, small
+boat rental and operations, faculty and staff from all the partner
+organizations, transportation of assets and people in Portugal and US
+participants, as also insurance and communication costs for and during
+the exercise. The budget will directly support software development to
 extend observation quality control, assimilation and ML based
 approaches to entropy reduction in modeling, all based out of \unive.
-
 
 \paragraph{Roles and responsibilities} \univ will be the lead
 organization, provide aerial, surface and underwater vehicles,
 communication equipment and command/control software while
-coordinating all activities. Funding requested will primarily support
-students and staff in Porto and Lisbon for software development, model
-development and operations.  \colo will work on making bio-optical and
-biological measurements and providing analysis and data to augment
-\ulis modeling. Table \ref{tab:roles} summarizes the roles and
-contributions of all partners.
+coordinating all activities including day-to-day directions during the
+experiment, much along the lines of \oldproje. \ulis will provide the
+statistical model predictions with uncertainty estimates daily, and
+also assimilate data from AUVs. \colo will work on making bio-optical
+measurements and providing analysis and remote sensing data to augment
+\ulis modeling.  Funding requested will primarily support students and
+staff in Porto and Lisbon for infrastructure software and model
+development and operations. Table \ref{tab:roles} summarizes the roles
+and contributions of all partners.
 
 \begin{table}[!t]
   \centering
@@ -246,13 +252,13 @@ contributions of all partners.
             prediction, Modeling, Machine Learning and entropy reduction&
                                                                           outreach\\
     \hline
-    \colo & Ocean dynamics, sampling algorithms&\\
+    \colo University & Ocean dynamics, sampling algorithms&\\
     \hline
   \end{tabular}
   \caption{Roles and responsibilities and in-kind contributions in
-    \proj for the proposed 2021 Sept-Oct field experiment. All team
-    members will be collaboratively involved in experiment design and
-    post experiment publishing.}
+    \proj for the proposed 2027 May field experiment. All team members
+    will be collaboratively involved in experiment design and post
+    experiment analysis and publishing.}
   \label{tab:roles}
 \end{table}
 
@@ -267,17 +273,19 @@ region has a robust presence of fishermen, nets and crab pots. We
 expect to field an ensemble of low cost robotic vehicles including
 propelled AUVs, unmanned surface vehicles, low cost Lagrangian
 profilers and aerial vehicles with RGB and potentially hyper-spectral
-imaging sensors. Accessibility to the two islands will also provide
-some shelter from weather for continuous operations including rapid
-launch/recovery of in-situ assets. In addition, we will obtain images
-from the \textbf{SeaHawk} nano-satellite (developed with funding from
-the Moore Foundation when Subramaniam was program director there) with
-a high quality multi-spectral
-imager~\footnote{\url{https://uncw.edu/socon/index.html}}. Finally,
-\univ has a number of low cost temperature/density sensors which when
-calibrated with CTDs on the vessel and robotic vehicles, will enable
-local fisherman to provide timely data in this meso-scale
-region. % All such data will be assimilated into the ocean models run by
+imaging sensors. % Accessibility to the two islands will also provide
+% some shelter from weather for continuous operations including rapid
+% launch/recovery of in-situ assets. 
+% In addition, we will obtain images
+% from the \textbf{SeaHawk} nano-satellite (developed with funding from
+% the Moore Foundation when Subramaniam was program director there) with
+% a high quality multi-spectral
+% imager~\footnote{\url{https://uncw.edu/socon/index.html}}. Finally,
+% \univ has a number of low cost temperature/density sensors which when
+% calibrated with CTDs on the vessel and robotic vehicles, will enable
+% local fisherman to provide timely data in this meso-scale
+% region.
+% All such data will be assimilated into the ocean models run by
 % \inst and supported by \mit which continues to support \texttt{HOPS}
 % development.
 
@@ -292,19 +300,25 @@ region. % All such data will be assimilated into the ocean models run by
 
 \section*{Outreach}
 
-% \inst has had continued and extensive engagement over the years with
-% the local authorities including the Nazar\'e city officials and local
-% fishermen. As a result we will engage the fishing community to carry
-% our low cost temperature/density sensors and also help provide access
-% to the team to be able to commute to the islands when necessary,
-% subject to health protocols.
-In addition, we expect to engage local high school students prior and
-after the experiment, to entice them into thinking about careers in
-science and technology, much as we have done in the past with success
-in another \org funded
+\begin{figure}[!h]
+  \vspace{-0.5cm}
+  \centering
+  \subfigure[]{\label{fig:chldomain}\includegraphics[scale=0.1]{fig/outreach-2.jpg}}
+  \subfigure[]{\label{fig:chlshelf}\includegraphics[scale=0.1]{fig/outreach-1.jpg}}
+  \caption{Outreach to specialized Science High School of the town of
+    \naz during \oldproj. \naz is a mix of affluent residents in a
+    beachside community, as well as a dominant community of fisher
+    folk.}
+  \label{fig:naz-outreach}
+\end{figure}
+
+We expect to engage local high school students prior and potentially
+during the field experiment, as a way to entice them into thinking
+about careers in science and technology, much as we have done in the
+past with success in another \org funded
 program~\footnote{\url{https://sunfish.lsts.pt/en/outreach/education}}. In
 \oldproj for instance, we engaged a local science high school with the
-participation of the district's superintendant. 
+participation of the district's superintendant.
 
 With the world-wide interest in the area \proj will also work with the
 local authorities to showcase our work in Portuguese and English
@@ -314,6 +328,6 @@ Finally, publications resulting from the project will be targeted
 towards peer-reviewed journals including \emph{Oceanography, Science
   Robotics, IEEE Transactions on Field Robotics, Int. J. of Robotics
   Research, AI Journal, Autonomous Robots, PLOSone, Frontiers} and
-high-impact conferences such as \emph{AAAI, IJCAI, ISER, ICAPS, RSS,
-  IROS, ICRA and IEEE AUV} where we have frequently published.
+high-impact conferences such as \emph{AAAI, IJCAI, ISER, RSS, IROS,
+  ICRA and IEEE AUV} where we have frequently published in the past.
 

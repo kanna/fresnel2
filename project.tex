@@ -229,10 +229,10 @@ organization, provide aerial, surface and underwater vehicles,
 communication equipment and command/control software while
 coordinating all activities including day-to-day directions during the
 experiment, much along the lines of \oldproje. \ulis will provide the
-statistical model predictions with uncertainty estimates daily, and
+three-dimensional spatial predictions of ocean properties with uncertainty estimates daily, and
 also assimilate data from AUVs. \colo will work on making bio-optical
 measurements and providing analysis and remote sensing data to augment
-\ulis modeling.  Funding requested will primarily support students and
+\ulis modeling capabilities.  Funding requested will primarily support students and
 staff in Porto and Lisbon for infrastructure software and model
 development and operations. Table \ref{tab:roles} summarizes the roles
 and contributions of all partners.
@@ -245,13 +245,13 @@ and contributions of all partners.
     \bfseries Inst. &\bfseries Role &\bfseries Contributions\\
     \hline
     \univ & Lead organization, CONOPS (concept of operations) design and
-            implementation, software engineering, reporting, experiment design, outreach
+            implementation, software engineering, reporting, experiment design, outreach, Physical Oceanography
                                     &aerial/surface/underwater
                                       vehicles, comms, gliders, operations team\\
     \hline
-    \ulis & Physical Oceanography, Modeling, observation assimilation,
-            prediction, Modeling, Machine Learning and entropy reduction&
-                                                                          outreach\\
+    \ulis & Stochastic spatial Modeling, observation assimilation,
+            multivariate ocean propertoes prediction, Modeling, Machine Learning and entropy reduction&
+                                                                          Computational codes, spatial data science team, outreach\\
     \hline
     \colo University & Bio-optics, Remote Sensing \& sampling algorithms&\\
     \hline
@@ -289,7 +289,14 @@ profilers and aerial vehicles with RGB and potentially hyper-spectral
 imaging sensors (Fig.
 \ref{fig:vehicles}).
 
-\kc{LA say something about the statistical model here}
+Building upon the lessons learned from FRESNEL, spatial data science methods (e.g., geostatistical simulation) will be used to assimilate multivariate direct observation of ocean properties such as ocean temperature and salinity. The spatial predictions with the new acquired data will be performed in three-dimensions at high spatial resolution along with spatial uncertainty. The uncertainty maps provide locations of high sampling rewards associated with higher entropy for the subsequent data acquisition loop. This approach allows data assimilation with low computational costs during operation in near-real-time. 
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[scale=0.5]{fig/DSS_ocean.png}
+  \caption{Example of geostatistical simulation for ocean modelling: (a) Predicted pointwise median temperature models for the deployment day; (b) the corresponding uncertainty represented by the pointwise standard deviation. The red rectangle represents the refined grid location for deployment and study area; and (c) AUV path projection (black trajectory) at the sea surface (green circle representing start and red star the end of the path). Example for FRESNEL}
+  \label{fig:vehicles}
+\end{figure}
 
 \section*{Outreach}
 

@@ -129,23 +129,23 @@ experiment.
 
 \subsection*{Key processes in \set Bay}
 
-The geomorphological setting (Arrábida Chain) justifies treating the
-region as a topographically and orographically controlled coastal
-system, where coastline orientation, shelf geometry, and the mountain
-barrier are expected to modulate local wind exposure, circulation
-patterns, and the spatial expression of upwelling-related
-processes. Published studies for the Portuguese west coast show that
-upwelling-favourable conditions are most consistent in spring and
-summer and that intense coastal upwelling is strongly shaped by local
-coastal geometry, with evidence that the upwelling core may separate
-from the coast depending on shelf structure and the interaction
-between surface and bottom Ekman layers. Studies in central Portugal
-further show that complex coastline and bathymetry favor along-slope
-jets, frontal structures, countercurrents during relaxation, and
-recirculation cells. These mechanisms provide the rationale for
-explicitly testing how local topographic steering alters the
-recurrence, persistence, and cross-shore organization of upwelling
-signatures in the Bay of \sete–-Sesimbra sector.
+The geomorphological setting justifies treating the region as a
+topographically and orographically controlled coastal system, where
+coastline orientation, shelf geometry, and the mountain barrier are
+expected to modulate local wind exposure, circulation patterns, and
+the spatial expression of upwelling-related processes. Published
+studies for the Portuguese west coast show that upwelling-favourable
+conditions are most consistent in spring and summer and that intense
+coastal upwelling is strongly shaped by local coastal geometry, with
+evidence that the upwelling core may separate from the coast depending
+on shelf structure and the interaction between surface and bottom
+Ekman layers. Studies in central Portugal further show that complex
+coastline and bathymetry favor along-slope jets, frontal structures,
+countercurrents during relaxation, and recirculation cells. These
+mechanisms provide the rationale for explicitly testing how local
+topographic steering alters the recurrence, persistence, and
+cross-shore organization of upwelling signatures in the Bay of
+\sete–-Sesimbra sector.
 
 
 \begin{figure}[!t]
@@ -189,50 +189,28 @@ operationally restrictive mainly under southerly swell conditions,
 which are comparatively uncommon in this region and more likely during
 fall and winter.
 
-\kc{RM+LA: To add some images of the \set area with SST images + plots
-  for a typical May weather in \set and any other figures of
-  relevance. See commented section below on what was included for \oldproje.}
-
-% \begin{figure}[!h]
-%   \vspace{-0.5cm}
-%   \centering
-%   \subfigure[]{\label{fig:chlshelf}\includegraphics[scale=0.45]{fig/chl-shelf.png}}
-%   \subfigure[]{\label{fig:chldomain}\includegraphics[scale=0.4]{fig/chl-domain.png}}
-%   \subfigure{\includegraphics[scale=0.3]{fig/legend.png}}
-%   % \hspace{+0.3cm} 
-%   \subfigure[]{\label{fig:tmpchange}\includegraphics[scale=0.285]{fig/temp-change.png}}
-%   \subfigure[]{\label{fig:chlchange}\includegraphics[scale=0.285]{fig/chl-change.png}}
-%   \caption{300m resolution remote sensing images from Sentinel 3 from
-%     September 6\textsuperscript{th} 2019 showing along shelf
-%     \subref{fig:chlshelf} and zoomed in Chlrophyll filaments
-%     \subref{fig:chldomain} emanating from the proposed study area of
-%     Nazar\'e canyon-Berlengas. \subref{fig:tmpchange} and
-%     \subref{fig:chlchange} show time series with rapid changes of
-%     temperature and chlorophyll respectively in the area.}
-%   \label{fig:studyarea-2}
-% \end{figure}
-
 \section*{Logistical and budgetary information}
 
 Our approximate and highly leveraged budget for this exercise is
-expected to be \textbf{$\sim \$500$ K to support this 21 day (3 week)}
+expected to be \textbf{$\sim \$500$ K} to support this 21 day (3 week)
 experiment. This includes deployment of all robotic vehicles, small
 boat rental and operations, faculty and staff from all the partner
 organizations, transportation of assets and people in Portugal and US
 participants, as also insurance and communication costs for and during
-the exercise. The budget will directly support software development to
-extend observation quality control, assimilation and ML based
-approaches to entropy reduction in modeling, all based out of \unive.
+the exercise. The budget will primarily support software development
+to extend observation quality control, assimilation and ML based
+approaches to entropy reduction in modeling, between \univ and \ulise.
 
 \paragraph{Roles and responsibilities} \univ will be the lead
 organization, provide aerial, surface and underwater vehicles,
 communication equipment and command/control software while
 coordinating all activities including day-to-day directions during the
 experiment, much along the lines of \oldproje. \ulis will provide the
-three-dimensional spatial predictions of ocean properties with uncertainty estimates daily, and
-also assimilate data from AUVs. \colo will work on making bio-optical
-measurements and providing analysis and remote sensing data to augment
-\ulis modeling capabilities.  Funding requested will primarily support students and
+three-dimensional spatial predictions of ocean properties with
+uncertainty estimates daily, and also assimilate data from AUVs. \colo
+University will work on making bio-optical measurements and providing
+analysis and remote sensing data to augment \ulis modeling
+capabilities.  Funding requested will primarily support students and
 staff in Porto and Lisbon for infrastructure software and model
 development and operations. Table \ref{tab:roles} summarizes the roles
 and contributions of all partners.
@@ -251,13 +229,13 @@ and contributions of all partners.
     \hline
     \ulis & Stochastic spatial Modeling, observation assimilation,
             multivariate ocean propertoes prediction, Modeling, Machine Learning and entropy reduction&
-                                                                          Computational codes, spatial data science team, outreach\\
+                                                                                                        Computational codes, spatial data science team, outreach\\
     \hline
     \colo University & Bio-optics, Remote Sensing \& sampling algorithms&\\
     \hline
   \end{tabular}
   \caption{Roles and responsibilities and in-kind contributions in
-    \proj for the proposed 2027 May field experiment. All team members
+    \proj for the proposed May 2027 field experiment. All team members
     will be collaboratively involved in experiment design and post
     experiment analysis and publishing.}
   \label{tab:roles}
@@ -286,21 +264,49 @@ region has a robust presence of fishermen, nets and crab pots. We
 expect to field an ensemble of low cost robotic vehicles including
 propelled AUVs, unmanned surface vehicles, low cost Lagrangian
 profilers and aerial vehicles with RGB and potentially hyper-spectral
-imaging sensors (Fig.
-\ref{fig:vehicles}).
+imaging sensors (Fig.  \ref{fig:vehicles}). \footnote{As noted above,
+  the \set region falls within the purview of the Portuguese Navy
+  since it lies within a site for real-world
+  experimentation area for \repe.}
 
-Building upon the lessons learned from FRESNEL, spatial data science methods (e.g., geostatistical simulation) will be used to assimilate multivariate direct observation of ocean properties such as ocean temperature and salinity. The spatial predictions with the new acquired data will be performed in three-dimensions at high spatial resolution along with spatial uncertainty. The uncertainty maps provide locations of high sampling rewards associated with higher entropy for the subsequent data acquisition loop. This approach allows data assimilation with low computational costs during operation in near-real-time. 
+Building upon the lessons learned from \oldproje, spatial data science
+methods such as geostatistical simulation, will be used to assimilate
+multivariate direct observation of ocean properties. The spatial
+predictions with the newly acquired data will be performed in
+three-dimensions at high spatial resolution along with spatial
+uncertainty. The uncertainty maps provide locations of high sampling
+rewards associated with higher entropy for the subsequent data
+acquisition loop (see Fig. \ref{fig:geosim} for an example). This
+approach allows data assimilation with low computational costs during
+operation in near-real-time.
 
 \begin{figure}[!t]
   \centering
   \includegraphics[scale=0.5]{fig/DSS_ocean.png}
-  \caption{Example of geostatistical simulation for ocean modelling: (a) Predicted pointwise median temperature models for the deployment day; (b) the corresponding uncertainty represented by the pointwise standard deviation. The red rectangle represents the refined grid location for deployment and study area; and (c) AUV path projection (black trajectory) at the sea surface (green circle representing start and red star the end of the path). Example for FRESNEL}
-  \label{fig:vehicles}
+  \caption{An example of geostatistical ocean simulation for
+    \oldproje.  (a) Predicted pointwise median temperature models for
+    29\textsuperscript{th} of October, 2024 off of the coast of \naze,
+    Portugal (b) the corresponding uncertainty represented by the
+    pointwise standard deviation. The red rectangle represents the
+    refined grid location for deployment and study area; and (c) AUV
+    path projection (black trajectory) at the sea surface -- the green
+    circle represents start and red star the end of the trajectory.}
+  \label{fig:geosim}
 \end{figure}
 
 \section*{Outreach}
 
-\begin{figure}[!h]
+
+We expect to engage local high school students prior and potentially
+during the field experiment, as a way to entice them into thinking
+about careers in science and technology, much as we have done in the
+past with success in another \org funded
+program~\footnote{\url{https://sunfish.lsts.pt/en/outreach/education.html}}.
+In \oldproj for instance, we engaged a local science high school with
+the participation of the district's superintendant
+(Fig. \ref{fig:naz-outreach}).
+
+\begin{figure}[!t]
   \vspace{-0.5cm}
   \centering
   \subfigure[]{\label{fig:chldomain}\includegraphics[scale=0.1]{fig/outreach-2.jpg}}
@@ -312,22 +318,18 @@ Building upon the lessons learned from FRESNEL, spatial data science methods (e.
   \label{fig:naz-outreach}
 \end{figure}
 
-We expect to engage local high school students prior and potentially
-during the field experiment, as a way to entice them into thinking
-about careers in science and technology, much as we have done in the
-past with success in another \org funded
-program~\footnote{\url{https://sunfish.lsts.pt/en/outreach/education}}. In
-\oldproj for instance, we engaged a local science high school with the
-participation of the district's superintendant.
-
-With the world-wide interest in the area \proj will also work with the
-local authorities to showcase our work in Portuguese and English
-language media outlets.
+With the wide interest in the \set area especially with the location
+of the yearly \rep exercise, \proj will add to the scientific interest
+and thereby expect to generate interest in science and exploration
+much along the lines of \naze. Outreach in such communities requires a
+mixture of English and the Portuguese. Given the importance of the lab
+in UPorto, it is also not challening to reach media outlets in the
+country.
 
 Finally, publications resulting from the project will be targeted
 towards peer-reviewed journals including \emph{Oceanography, Science
   Robotics, IEEE Transactions on Field Robotics, Int. J. of Robotics
   Research, AI Journal, Autonomous Robots, PLOSone, Frontiers} and
-high-impact conferences such as \emph{AAAI, IJCAI, ISER, RSS, IROS,
-  ICRA and IEEE AUV} where we have frequently published in the past.
+high-impact technical conferences such as \emph{AAAI, IJCAI, ISER,
+  RSS, IROS, ICRA and IEEE AUV} where we have published frequently.
 

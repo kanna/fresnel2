@@ -1,12 +1,12 @@
 \section*{Introduction}
 
-In 2024, the execution of the \org funded \oldproj demonstrated that
+In 2024, the execution of the \org funded \oldproj project demonstrated that
 ocean model driven \emph{adaptive} robotic exploration, tying targeted
 sampling with data assimilated into the model in a virtuous
 \emph{sample-assimilate-predict-direct} cycle could enhance model
 skill \cite{mendes25,bernacchi26}. The experiment showcased advanced
 multi-vehicle adaptive algorithms working with powered low-cost
-autonomous underwater vehicles (AUVs) and a stochastic low-latency
+autonomous underwater vehicles (AUVs) and a stochastic geostatistical simulation low-latency
 model to demonstrate this loop closure. The effort was planned for 3
 weeks off the coast of Portugal, in the highly dynamic coastal
 bio-geophysically driven environment of the \naz canyon (one of the
@@ -46,7 +46,7 @@ In \proje, we propose to build on this effort in the following ways:
   which used only temperature as a primary variable to drive
   adaptation 
 
-\item Showcase ensembles of models (both statistical, numerical) and
+\item Showcase ensembles of ocean models (both statistical, numerical) and
   compare and contrast model results to drive down averaged model
   uncertainty
   
@@ -203,24 +203,24 @@ organizations, transportation of assets and people in Portugal and US
 participants, as also insurance and communication costs for and during
 the exercise. The budget will primarily support software development
 to extend observation quality control, assimilation and ML based
-approaches to entropy reduction in modeling, between \unive, \ulis
+approaches to entropy reduction in modeling, between \unive, \IST
 and \now Systems.
 
 \paragraph{Roles and responsibilities} \univ will be the lead
 organization, provide aerial, surface and underwater vehicles,
 communication equipment and command/control software while
 coordinating all activities including day-to-day directions during the
-experiment, much along the lines of \oldproje. \ulis will provide the
-three-dimensional spatial predictions of ocean properties with
+experiment, much along the lines of \oldproje. \IST will provide the
+high-resolution three-dimensional spatial predictions of ocean properties with
 uncertainty estimates daily, and also assimilate data from AUVs. \colo
 University will work on making bio-optical measurements and providing
-analysis and remote sensing data to augment \ulis modeling
+analysis and remote sensing data to augment \IST modeling
 capabilities. \now systems will be the key modeler providing
 uncertainty maps and oceanographic predictions for the \set Bay; their
 role as the primary modeler for the IBI region for E.U. Copernicus
 Marine Service (CMEMS NEMO) \cite{CMEMS2017} brings substantial
 modeling expertise in \textbf{ROMS} to complement the stochastic
-geo-statistical model from \ulise.  Funding requested will primarily
+geostatistical model from \ISTe.  Funding requested will primarily
 support students and staff in Porto and Lisbon for infrastructure
 software and model development and operations for \now Systems. Table
 \ref{tab:roles} summarizes the roles and contributions of all
@@ -239,7 +239,7 @@ partners.
                                     &aerial, surface \& underwater
                                       vehicles, comms, gliders, operations team\\
     \hline
-    \ulis & PT & Stochastic spatial Modeling, observation assimilation,
+    \IST & PT & Stochastic spatial Modeling, observation assimilation,
             multivariate ocean properties prediction, Modeling, Machine Learning and entropy reduction&
                                                                                                         Computational codes, spatial data science team, outreach\\
     \hline

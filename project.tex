@@ -27,11 +27,11 @@ logistical. The primary challenges were inclement Fall weather,
 unreliable numerical modeling results (hence the fallback to a
 statistical model), research vessel failures and leaks in a newly
 acquired glider meant to seed the boundary conditions in the
-\texttt{HOPS} numerical model. The results as noted in the
-publications show promise over the 3-days of data assimilation and
-targeted exploration.
+\texttt{HOPS} numerical model. The outputs as noted in the
+publications, nevertheless, show promise over the 3-days of data
+assimilation and targeted exploration.
 
-In \proj, we propose to build on this effort in the following ways:
+In \proje, we propose to build on this effort in the following ways:
 
 \begin{enumerate}[noitemsep,topsep=5pt,parsep=0pt,partopsep=0pt,leftmargin=0.5cm]
 
@@ -58,21 +58,21 @@ In \proj, we propose to build on this effort in the following ways:
 
 Put together, this advances the science, demonstrates the utility of
 robotics to modeling and Physical Oceanography, generates novel ways
-to observe the ocean and leverages funded efforts at \orge. Further,
-it builds on efforts in \org funded \textbf{AOSN} \cite{aosn93} and
-\textbf{AOSN-II} \cite{ramp09} projects. \proj will however use
-low-cost approaches to field science, and with a modest budget.
+to observe the ocean and leverages previous efforts by building on
+\org funded \textbf{AOSN} \cite{aosn93} and \textbf{AOSN-II}
+\cite{ramp09} projects. \proj will however use low-cost approaches to
+field science, and with a far more modest budget.
 
 In doing so, our objective is to demonstrate the applicability of
 adaptively controlled marine robots in the aerial, surface and
 underwater domains while sampling the upper water-column 'at the right
 place and time' driven by ocean models with increasing predictive
 skill because of assimilation and uncertainty prediction. In the
-process, we also plan to mitigate the shortcomings noted from our
-earlier effort, in ways that can provide for sustained in-water
-presence of AUVs over a period of 3 weeks to validate our approach
-conclusively.  Fig. \ref{fig:block-diag} shows a conceptual view of
-the proposed field experiment.
+process, we also plan to mitigate the shortcomings noted from \oldproj
+in ways that can provide for sustained in-water presence of AUVs over
+a period of 3 weeks to validate our approach conclusively.
+Fig. \ref{fig:block-diag} shows a conceptual view of the proposed
+field experiment.
 
 \section*{Motivation}
 
@@ -111,20 +111,21 @@ assimilation, modeling and prediction in ways not done before.
 
 \section*{Location}
 
-The project will focus on \set Bay, south of Lisbon, and the adjacent
-coastal shelf between \set and Sesimbra (Fig. \ref{fig:domain}). This
-choice is motivated by the fact that the region combines a
-semi-enclosed bay, an abrupt coastal mountain system, a narrow and
-topographically complex shelf, and the nearby \set Canyon, creating a
-highly heterogeneous environment for testing robotic exploration and
-short-term coastal predictions. From an operational standpoint, this
-area is also particularly attractive because it lies within a
-regulated real-world experimentation area created to test unmanned and
-other advanced technologies in open-sea conditions and monitored from
-the Portuguese Navy’s operational experimentation centre in \tre. The
-same area regularly hosts the \rep exercise with participants of more
-than 30 navies (including personnel from the US Navy and \orge). We
-propose targeting the month of May 2027 for the experiment.
+The project will focus on \set Bay, south of Lisbon, Portugal, and the
+adjacent coastal shelf between \set and Sesimbra
+(Fig. \ref{fig:domain}). This choice is motivated by the fact that the
+region combines a semi-enclosed bay, an abrupt coastal mountain
+system, a narrow and topographically complex shelf, and the nearby
+\set Canyon, creating a highly heterogeneous environment for testing
+robotic exploration and short-term coastal predictions. From an
+operational standpoint, this area is also particularly attractive
+because it lies within a regulated real-world experimentation area
+created to test unmanned and other advanced technologies in open-sea
+conditions and monitored from the Portuguese Navy’s operational
+experimentation centre in \tre. The same area regularly hosts the \rep
+exercise with participants of more than 30 navies (including personnel
+from the US Navy and \orge). We propose targeting the month of May
+2027 for the experiment.
 
 \subsection*{Key processes in \set Bay}
 
@@ -149,7 +150,8 @@ cross-shore organization of upwelling signatures in the Bay of
 
 \begin{figure}[!t]
   \centering
-  \includegraphics[scale=0.5]{fig/fig_setubal_bay.png}
+    \subfigure[]{\label{fig:Setubal1}\includegraphics[scale=0.46]{fig/Setubal-1.png}}
+    \subfigure[]{\label{fig:Setubal2}\includegraphics[scale=0.56]{fig/Setubal-2.png}}
   \caption{The operational domain for \proj is \set Bay south of
     Lisbon, which combines a semi-enclosed bay, an abrupt coastal
     mountain system, a narrow and topographically complex shelf, and
@@ -186,20 +188,23 @@ conditions created by the local coastal configuration and
 orography. In practice, sea-state limitations are expected to become
 operationally restrictive mainly under southerly swell conditions,
 which are comparatively uncommon in this region and more likely during
-fall and winter.
+fall and winter. Should the \org funded CODAR installations be
+operative and available in \set Bay, those would further bolster this
+effort with additional data for assimilation.
 
 
 \section*{Logistical and budgetary information}
 
-Our appr.oximate and highly leveraged budget for this exercise is
-expected to be \textbf{$\sim \$500$ K} to support this 21 day (3 week)
+Our approximate and highly leveraged budget for this exercise is
+expected to be \textbf{$\sim \$700$} K to support this 21 day (3 week)
 experiment. This includes deployment of all robotic vehicles, small
 boat rental and operations, faculty and staff from all the partner
 organizations, transportation of assets and people in Portugal and US
 participants, as also insurance and communication costs for and during
 the exercise. The budget will primarily support software development
 to extend observation quality control, assimilation and ML based
-approaches to entropy reduction in modeling, between \univ and \ulise.
+approaches to entropy reduction in modeling, between \unive, \ulis
+and \now Systems.
 
 \paragraph{Roles and responsibilities} \univ will be the lead
 organization, provide aerial, surface and underwater vehicles,
@@ -224,22 +229,23 @@ partners.
 \begin{table}[!t]
   \centering
   \vspace{-0.5cm}
-  \begin{tabular}{|p{1.5cm}|p{10cm}|p{4cm}|}\hline 
+  \begin{tabular}{|p{2.3cm}|p{1cm}|p{7cm}|p{4cm}|}\hline 
     \rowcolor{Gray}
-    \bfseries .. &\bfseries Role &\bfseries Contributions\\
+    \bfseries Inst. &\bfseries Loc. &\bfseries Role &\bfseries Contributions\\
     \hline
-ççç    \univ & Lead organization, CONOPS (concept of operations) design and
-            implementation, software engineering, reporting, experiment design, outreach, Physical Oceanography
-                                    &aerial/surface/underwater
+   \univ & PT & Lead organization, CONOPS (concept of operations) design and
+            implementation, software engineering, reporting,
+                experiment design, outreach, Physical Oceanography \& Operations
+                                    &aerial, surface \& underwater
                                       vehicles, comms, gliders, operations team\\
     \hline
-    \ulis & Stochastic spatial Modeling, observation assimilation,
+    \ulis & PT & Stochastic spatial Modeling, observation assimilation,
             multivariate ocean properties prediction, Modeling, Machine Learning and entropy reduction&
                                                                                                         Computational codes, spatial data science team, outreach\\
     \hline
-    \colo University & Bio-optics, Remote Sensing \& sampling algorithms&\\
+    \colo University & US & Bio-optics, Remote Sensing \& sampling algorithms&\\
     \hline
-0    \now Systems & High-resolution modeling, ML-based forcing correction,
+    \now Systems & ES & High-resolution modeling, ML-based forcing correction,
                    downstream operational service, uncertainty quantification & Coastal physics, waves and river models, modelling team\\
     \hline
   \end{tabular}
@@ -389,7 +395,7 @@ the participation of the district's superintendant
   \caption{Outreach to specialized Science High School of the town of
     \naz during \oldproj October 2024. \naz is a mix of affluent
     residents in a beachside community, as well as a dominant
-    community of fisher folk.}
+    community of modest fisher folk.}
   \label{fig:naz-outreach}
 \end{figure}
 

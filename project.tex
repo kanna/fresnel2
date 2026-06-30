@@ -121,11 +121,10 @@ short-term coastal predictions. From an operational standpoint, this
 area is also particularly attractive because it lies within a
 regulated real-world experimentation area created to test unmanned and
 other advanced technologies in open-sea conditions and monitored from
-the Portuguese Navy’s operational experimentation centre in
-Tr\'{o}ia. The same area regularly hosts the \rep exercise with
-participants of more than 30 navies (including personnel from the US
-Navy and \orge). We propose targeting the month of May 2027 for the
-experiment.
+the Portuguese Navy’s operational experimentation centre in \tre. The
+same area regularly hosts the \rep exercise with participants of more
+than 30 navies (including personnel from the US Navy and \orge). We
+propose targeting the month of May 2027 for the experiment.
 
 \subsection*{Key processes in \set Bay}
 
@@ -189,9 +188,6 @@ operationally restrictive mainly under southerly swell conditions,
 which are comparatively uncommon in this region and more likely during
 fall and winter.
 
-\section*{Model Approach}
-\rmcommen
-
 
 \section*{Logistical and budgetary information}
 
@@ -237,7 +233,8 @@ and contributions of all partners.
     \hline
     \colo University & Bio-optics, Remote Sensing \& sampling algorithms&\\
     \hline
-    NOW Systems & High-resolution modeling, ML-based forcing correction, downstream operational service, uncertainty quantification & Coastal physics, waves and river models, modelling team\\
+    \now Systems & High-resolution modeling, ML-based forcing correction,
+                   downstream operational service, uncertainty quantification & Coastal physics, waves and river models, modelling team\\
     \hline
   \end{tabular}
   \caption{Roles and responsibilities and in-kind contributions in
@@ -272,8 +269,10 @@ propelled AUVs, unmanned surface vehicles, low cost Lagrangian
 profilers and aerial vehicles with RGB and potentially hyper-spectral
 imaging sensors (Fig.  \ref{fig:vehicles}). \footnote{As noted above,
   the \set region falls within the purview of the Portuguese Navy
-  since it lies within a site for real-world
-  experimentation area for \repe.}
+  since it lies within a site for real-world experimentation area for
+  \repe, the \emph{largest} field experiment involving naval
+  autonomous systems in the
+  world. \url{https://en.wikipedia.org/wiki/Exercise_REP(MUS)}.}
 
 Building upon the lessons learned from \oldproje, spatial data science
 methods such as geostatistical simulation, will be used to assimilate
@@ -300,20 +299,68 @@ operation in near-real-time.
   \label{fig:geosim}
 \end{figure}
 
+To address the complex coastal dynamics of the \tre-Sines Littoral
+Arch during the proposed \proj campaign, we propose a high-resolution
+downstream operational service (Fig.  \ref{fig:flchartcst}). This
+system is designed to bridge the gap between regional oceanography and
+local physical processes. The core of this prediction engine relies on
+a two-way coupled implementation of the Regional Ocean Modeling System
+(\textbf{ROMS}) \cite{ROMS2005} and the Simulating WAves Nearshore
+(\textbf{SWAN}) \cite{SWAN1999} model, using the \textbf{COAWST}
+\cite{COAWST2010} coupling framework. The domain will extend from the
+\tr Peninsula to Sines, with a spatial horizontal resolution of 350
+m. The system will be nested within the Copernicus Marine
+Iberia-Biscay-Ireland regional products (IBI-PHY and IBI-WAV),
+yielding 2.5 km and hourly-averaged Open Boundary Conditions
+(OBCs). This nesting strategy ensures that large-scale mesoscale ocean
+features and far-field Atlantic swells are accurately propagated into
+our coastal domain, driving the primary hydrodynamic fluxes in the
+region.
+
 \begin{figure}[!t]
   \centering
   \includegraphics[scale=0.6]{fig/flowchart_coastal_modelling.jpg}
-  \caption{Proposed operational downscaling and coupled modeling framework for the Tróia--Sines Littoral Arch.}
+  \caption{Proposed operational downscaling and coupled modeling
+    framework for the \tre--Sines Littoral Arch.}
   \label{fig:flchartcst}
 \end{figure}
 
-To address the complex coastal dynamics of the Tróia-Sines Littoral Arch during the FRESNEL-II campaign, we propose a high-resolution downstream operational service (Fig.  \ref{fig:flchartcst}). This system is designed to bridge the gap between regional oceanography and local physical processes. The core of this prediction engine relies on a two-way coupled implementation of the Regional Ocean Modeling System (ROMS, \cite{ROMS2005}) and the Simulating WAves Nearshore (SWAN, \cite{SWAN1999}) model, using the COAWST \cite{COAWST2010} coupling framework. The domain will extend from the Tróia Peninsula to Sines, with a spatial horizontal resolution of 350 m. The system will be nested within the Copernicus Marine Iberia-Biscay-Ireland regional products (IBI-PHY and IBI-WAV), yielding 2.5 km and hourly-averaged Open Boundary Conditions (OBCs). This nesting strategy ensures that large-scale mesoscale ocean features and far-field Atlantic swells are accurately propagated into our coastal domain, driving the primary hydrodynamic fluxes in the region.
+The selection of \textbf{ROMS} as the hydrodynamic engine is driven by
+its advanced terrain-following (sigma-coordinate) vertical
+discretization scheme. This scheme is suitable to resolve the sharp
+bathymetric gradients of this area, most notably the \set Submarine
+Canyon, without inducing prohibitive pressure gradient
+errors. Furthermore, across the shallower inner shelf, wave-induced
+currents play a dominant role in modulating coastal hydrodynamics. By
+coupling \textbf{ROMS} with \textbf{SWAN}, we explicitly resolve
+complex wave-current interactions, which are key for the accurate
+advection of salinity and temperature fluxes.
 
-The selection of ROMS as the hydrodynamic engine is driven by its advanced terrain-following (sigma-coordinate) vertical discretization scheme. This scheme is suitable to resolve the sharp bathymetric gradients of this area, most notably the Setúbal Submarine Canyon, without inducing prohibitive pressure gradient errors. Furthermore, across the shallower inner shelf, wave-induced currents play a dominant role in modulating coastal hydrodynamics. By coupling ROMS with SWAN, we explicitly resolve complex wave-current interactions, which are key for the accurate advection of salinity and temperature fluxes.
+Accurate simulation of coastal baroclinic and thermohaline circulation
+also requires a rigorous quantification of inland water
+fluxes. Episodic discharges from the Sado River frequently generate
+low-salinity plumes that alter coastal stratification and cross-shelf
+momentum. To capture this critical forcing, we propose the development
+of a catchment model for the Sado River basin utilizing
+\textbf{MOHID-LAND} \cite{trancoso2009,canuto2019}, which will provide
+\textbf{ROMS} with highly accurate freshwater influxes. Additionally,
+momentum and heat fluxes at the air-sea interface will be driven by
+high-resolution (5 km) atmospheric forcing from MeteoGalicia, ensuring
+the model accurately captures sharp coastal wind gradients.
 
-Accurate simulation of coastal baroclinic and thermohaline circulation also requires a rigorous quantification of inland water fluxes. Episodic discharges from the Sado River frequently generate low-salinity plumes that alter coastal stratification and cross-shelf momentum. To capture this critical forcing, we propose the development of a catchment model for the Sado River basin utilizing MOHID-LAND \cite{trancoso2009,canuto2019}, which will provide ROMS with highly accurate freshwater influxes. Additionally, momentum and heat fluxes at the air-sea interface will be driven by high-resolution (5 km) atmospheric forcing from MeteoGalicia, ensuring the model accurately captures sharp coastal wind gradients.
-
-Ultimately, this framework will be deployed in direct support of the FRESNEL-II field campaign, running daily through two sequential phases. First, the system will run in hindcast mode, using the latest available in-situ observational data recorded during the campaign. This step aims to identify and remove systematic biases within the initial conditions (IC) and OBCs, with a strong focus on the temperature and salinity fields. The second step will run the system in forecast mode for the duration of the FRESNEL-II campaign. This phase will deliver: (i) 3D marine physical fields, sea level, and waves, as well as (ii) temperature and salinity uncertainty fields to guide targeted sampling. This information, in conjunction with other models in the area, will support the optimal deployment of physical assets in the field.
+Ultimately, this framework will be deployed in direct support of the
+\proj field campaign, running daily through two sequential
+phases. First, the system will run in hindcast mode, using the latest
+available in-situ observational data recorded during the
+campaign. This step aims to identify and remove systematic biases
+within the initial conditions and OBCs, with a strong focus on the
+temperature and salinity fields. The second step will run the system
+in forecast mode for the duration of the \proj campaign. This phase
+will deliver: (i) 3D marine physical fields, sea level, and waves, as
+well as (ii) temperature and salinity uncertainty fields to guide
+targeted sampling. This information, in conjunction with other models
+in the area, will support the optimal deployment of physical assets in
+the field.
 
 
 \section*{Outreach}
